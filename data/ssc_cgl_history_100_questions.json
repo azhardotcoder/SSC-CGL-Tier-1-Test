@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "question": "who was the founder of the maurya dynasty?",
+    "options": {
+      "A": "Chandragupta",
+      "B": "Ashoka",
+      "C": "Harshavardhana",
+      "D": "Chandragupta Maurya"
+    },
+    "correctAnswer": "D",
+    "category": "History",
+    "explanation": "The founder of the Maurya dynasty was Chandragupta Maurya."
+  },
+  {
+    "id": 2,
+    "question": "who was the founder of the gupta dynasty?",
+    "options": {
+      "A": "Chandragupta",
+      "B": "Ashoka",
+      "C": "Harshavardhana",
+      "D": "Sri Gupta"
+    },
+    "correctAnswer": "D",
+    "category": "History",
+    "explanation": "The founder of the Gupta dynasty was Sri Gupta."
+  },
+  {
+    "id": 3,
+    "question": "who was the founder of the mughal dynasty?",
+    "options": {
+      "A": "Chandragupta",
+      "B": "Ashoka",
+      "C": "Harshavardhana",
+      "D": "Babur"
+    },
+    "correctAnswer": "D",
+    "category": "History",
+    "explanation": "The founder of the Mughal dynasty was Babur."
+  },
+  {
+    "id": 4,
+    "question": "who was the founder of the lodi dynasty?",
+    "options": {
+      "A": "Chandragupta",
+      "B": "Ashoka",
+      "C": "Harshavardhana",
+      "D": "Bahlol Lodi"
+    },
+    "correctAnswer": "D",
+    "category": "History",
+    "explanation": "The founder of the Lodi dynasty was Bahlol Lodi."
+  }
+]

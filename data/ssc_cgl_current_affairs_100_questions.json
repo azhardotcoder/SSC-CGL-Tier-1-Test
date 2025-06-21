@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "question": "who is the current president of india (as of 2024)?",
+    "options": {
+      "A": "Pratibha Patil",
+      "B": "Droupadi Murmu",
+      "C": "Ram Nath Kovind",
+      "D": "Narendra Modi"
+    },
+    "correctAnswer": "B",
+    "category": "Current Affairs",
+    "explanation": "Droupadi Murmu is the President of India since 2022."
+  }
+]

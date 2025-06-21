@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "question": "which article of the indian constitution deals with national emergency?",
+    "options": {
+      "A": "352",
+      "B": "360",
+      "C": "368",
+      "D": "352"
+    },
+    "correctAnswer": "D",
+    "category": "Polity",
+    "explanation": "Article 352 deals with national emergency."
+  },
+  {
+    "id": 2,
+    "question": "which article of the indian constitution deals with financial emergency?",
+    "options": {
+      "A": "352",
+      "B": "360",
+      "C": "368",
+      "D": "360"
+    },
+    "correctAnswer": "D",
+    "category": "Polity",
+    "explanation": "Article 360 deals with financial emergency."
+  },
+  {
+    "id": 3,
+    "question": "which article of the indian constitution deals with constitutional amendment?",
+    "options": {
+      "A": "352",
+      "B": "360",
+      "C": "368",
+      "D": "368"
+    },
+    "correctAnswer": "D",
+    "category": "Polity",
+    "explanation": "Article 368 deals with constitutional amendment."
+  }
+]

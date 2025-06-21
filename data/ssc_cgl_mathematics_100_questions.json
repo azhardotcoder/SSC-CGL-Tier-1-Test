@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "question": "if the price increases by 25%, by what percent should consumption decrease to keep expenditure same?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "18%",
+      "D": "20%"
+    },
+    "correctAnswer": "D",
+    "category": "Mathematics",
+    "explanation": "To maintain constant expenditure, decrease % = 25/(100 + 25) × 100 = 20%."
+  },
+  {
+    "id": 2,
+    "question": "if the price increases by 50%, by what percent should consumption decrease to keep expenditure same?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "18%",
+      "D": "33.33%"
+    },
+    "correctAnswer": "D",
+    "category": "Mathematics",
+    "explanation": "To maintain constant expenditure, decrease % = 50/(100 + 50) × 100 = 33.33%."
+  },
+  {
+    "id": 3,
+    "question": "if the price increases by 20%, by what percent should consumption decrease to keep expenditure same?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "18%",
+      "D": "16.67%"
+    },
+    "correctAnswer": "D",
+    "category": "Mathematics",
+    "explanation": "To maintain constant expenditure, decrease % = 20/(100 + 20) × 100 = 16.67%."
+  }
+]

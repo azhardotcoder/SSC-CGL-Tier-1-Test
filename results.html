@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC CGL Tier-1 Mock Test - Results</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="ssclogo.png">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Results Page -->
+    <div id="results-page" class="page active">
+        <div class="header">
+             <div class="logo">
+                <img src="ssclogo.png" alt="SSC Logo">
+                <span>Staff Selection Commission<br>Government of India</span>
+            </div>
+            <div id="live-clock-results" class="live-clock"></div>
+        </div>
+        <div class="container">
+            <h1>Test Results</h1>
+            <div class="test-info-results">
+                <h3 id="test-name-result">Test Set 1</h3>
+            </div>
+            <div class="results-summary">
+                <div class="score-card">
+                    <h2>Total Score</h2>
+                    <div class="score-display">
+                        <span id="total-score">0</span> / <span id="max-score">200</span>
+                    </div>
+                </div>
+                
+                <div class="breakdown-card">
+                    <h3>Performance Breakdown</h3>
+                    <div class="breakdown-item">
+                        <span>Correct Answers:</span>
+                        <span id="correct-count" class="positive">0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>Incorrect Answers:</span>
+                        <span id="incorrect-count" class="negative">0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>Unattempted:</span>
+                        <span id="unattempted-count">0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span>Accuracy:</span>
+                        <span id="accuracy">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button id="review-answers-btn" class="btn-secondary">Review Answers</button>
+                <button id="new-test-btn" class="btn-primary">Take New Test</button>
+                <button id="share-result-btn" class="btn-secondary">Share Result</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 

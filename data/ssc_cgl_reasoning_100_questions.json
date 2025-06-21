@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "question": "find the next number in the series: 2, 6, 12, 20, ?",
+    "options": {
+      "A": "30",
+      "B": "28",
+      "C": "24",
+      "D": "22"
+    },
+    "correctAnswer": "B",
+    "category": "Reasoning",
+    "explanation": "Pattern is n^2 + n: 1+1=2, 2+4=6, 3+9=12, 4+16=20, 5+25=30."
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "question": "which of the following is a direct tax?",
+    "options": {
+      "A": "GST",
+      "B": "Income Tax",
+      "C": "Custom Duty",
+      "D": "Excise Duty"
+    },
+    "correctAnswer": "B",
+    "category": "Economics",
+    "explanation": "Income Tax is paid directly by individuals and is a direct tax."
+  }
+]

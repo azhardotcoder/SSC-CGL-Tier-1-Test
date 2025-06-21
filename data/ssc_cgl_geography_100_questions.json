@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "question": "what is the capital city of france?",
+    "options": {
+      "A": "Paris",
+      "B": "Berlin",
+      "C": "Paris",
+      "D": "Madrid"
+    },
+    "correctAnswer": "C",
+    "category": "Geography",
+    "explanation": "The capital of France is Paris."
+  },
+  {
+    "id": 2,
+    "question": "what is the capital city of germany?",
+    "options": {
+      "A": "Paris",
+      "B": "Berlin",
+      "C": "Berlin",
+      "D": "Madrid"
+    },
+    "correctAnswer": "C",
+    "category": "Geography",
+    "explanation": "The capital of Germany is Berlin."
+  },
+  {
+    "id": 3,
+    "question": "what is the capital city of japan?",
+    "options": {
+      "A": "Paris",
+      "B": "Berlin",
+      "C": "Tokyo",
+      "D": "Madrid"
+    },
+    "correctAnswer": "C",
+    "category": "Geography",
+    "explanation": "The capital of Japan is Tokyo."
+  },
+  {
+    "id": 4,
+    "question": "what is the capital city of canada?",
+    "options": {
+      "A": "Paris",
+      "B": "Berlin",
+      "C": "Ottawa",
+      "D": "Madrid"
+    },
+    "correctAnswer": "C",
+    "category": "Geography",
+    "explanation": "The capital of Canada is Ottawa."
+  }
+]

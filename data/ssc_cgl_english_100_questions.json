@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "question": "choose the correctly spelt word.",
+    "options": {
+      "A": "Grammer",
+      "B": "Gramerr",
+      "C": "Grammerly",
+      "D": "Grammar"
+    },
+    "correctAnswer": "D",
+    "category": "English",
+    "explanation": "'Grammar' is the correct spelling."
+  }
+]

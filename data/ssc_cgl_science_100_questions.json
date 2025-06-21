@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "question": "what is the chemical symbol for gold?",
+    "options": {
+      "A": "Ag",
+      "B": "Fe",
+      "C": "Cu",
+      "D": "Au"
+    },
+    "correctAnswer": "D",
+    "category": "Science",
+    "explanation": "The chemical symbol for Gold is Au."
+  },
+  {
+    "id": 2,
+    "question": "what is the chemical symbol for silver?",
+    "options": {
+      "A": "Ag",
+      "B": "Fe",
+      "C": "Cu",
+      "D": "Ag"
+    },
+    "correctAnswer": "D",
+    "category": "Science",
+    "explanation": "The chemical symbol for Silver is Ag."
+  },
+  {
+    "id": 3,
+    "question": "what is the chemical symbol for iron?",
+    "options": {
+      "A": "Ag",
+      "B": "Fe",
+      "C": "Cu",
+      "D": "Fe"
+    },
+    "correctAnswer": "D",
+    "category": "Science",
+    "explanation": "The chemical symbol for Iron is Fe."
+  },
+  {
+    "id": 4,
+    "question": "what is the chemical symbol for copper?",
+    "options": {
+      "A": "Ag",
+      "B": "Fe",
+      "C": "Cu",
+      "D": "Cu"
+    },
+    "correctAnswer": "D",
+    "category": "Science",
+    "explanation": "The chemical symbol for Copper is Cu."
+  }
+]

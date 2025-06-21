@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSC CGL Tier-1 Mock Test</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="ssclogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Test Interface -->
+    <div id="test-page" class="page active">
+        <div class="header">
+            <div class="logo">
+                <img src="ssclogo.png" alt="SSC Logo">
+                <span>Staff Selection Commission<br>Government of India</span>
+            </div>
+            <div id="live-clock-test" class="live-clock"></div>
+        </div>
+        <div class="sub-header">
+            <span class="test-title">SSC CGL Tier I Free Test</span>
+            <div class="header-controls">
+                <div id="timer-container" class="timer-container" style="display:none;">
+                    <span>Time Left: </span>
+                    <span id="timer" class="timer">01:00:00</span>
+                    <span> hrs</span>
+                </div>
+                <span id="candidate-display" class="candidate-display"></span>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="question-area">
+                <div class="question-header">
+                    <div class="text-size-controls">
+                        <span>Text Size: </span>
+                        <button id="font-decrease" class="font-btn">A-</button>
+                        <button id="font-increase" class="font-btn">A+</button>
+                    </div>
+                    <div id="question-section" class="question-section">Section: General Intelligence and Reasoning</div>
+                </div>
+
+                <div class="question-body">
+                    <div class="mark-info">(Mark: 2) (Negative Mark/s - 0.5)</div>
+                    <div id="question-text" class="question-text">
+                        <!-- Question will be loaded here by JS -->
+                    </div>
+                    <div id="options-container" class="options-container">
+                        <!-- Options will be loaded here by JS -->
+                    </div>
+                </div>
+                
+                <div class="navigation-panel">
+                    <button id="prev-btn" class="nav-btn">Previous</button>
+                    <button id="mark-review-btn" class="nav-btn">Mark for Review</button>
+                    <button id="next-btn" class="nav-btn">Next & Save</button>
+                    <button id="submit-test-btn" class="submit-btn" style="display: none;">Submit Test</button>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <div class="candidate-info">
+                    <div class="candidate-photo">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Candidate Photo</span>
+                    </div>
+                    <div class="info-text">
+                        <span>Roll no.</span><strong id="roll-no">TEST1</strong>
+                        <span>Candidate Name</span><strong id="candidate-name">TEST1</strong>
+                    </div>
+                    <div class="signature">Signature</div>
+                </div>
+
+                <div class="question-palette">
+                    <div class="palette-header">Number of Questions</div>
+                    <div id="palette-grid" class="palette-grid">
+                        <!-- Palette items loaded by JS -->
+                    </div>
+                    <div class="palette-legend">
+                        <div class="legend-item"><span class="legend-box attempted"></span>Attempted</div>
+                        <div class="legend-item"><span class="legend-box marked"></span>Marked</div>
+                        <div class="legend-item"><span class="legend-box attempted-marked"></span>Attempted & Marked</div>
+                        <div class="legend-item"><span class="legend-box unattempted"></span>Unattempted</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 

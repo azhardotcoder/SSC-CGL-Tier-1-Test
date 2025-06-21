@@ -1,0 +1,67 @@
+[
+  {
+    "question": "in a right angled triangle, the product of its two sides equals half of the square of the third side. one of the acute angles must then be?",
+    "options": {
+      "A": "150°",
+      "B": "30°",
+      "C": "45°",
+      "D": "60°"
+    },
+    "correctAnswer": "C",
+    "category": "Mathematics",
+    "explanation": "Using the Pythagorean Theorem and given relation, the angle is found to be 45°.",
+    "id": 1
+  },
+  {
+    "question": "kwashiorkor is a form of malnutrition caused due to the lack of what?",
+    "options": {
+      "A": "Fat",
+      "B": "Protein",
+      "C": "Vitamins",
+      "D": "Carbohydrates"
+    },
+    "correctAnswer": "B",
+    "category": "Biology",
+    "explanation": "Kwashiorkor results from a deficiency in protein intake in the diet, especially in children.",
+    "id": 2
+  },
+  {
+    "question": "which of the following is found only in plant cells?",
+    "options": {
+      "A": "Mitochondria",
+      "B": "Nucleolus",
+      "C": "Cell Wall",
+      "D": "Cell membrane"
+    },
+    "correctAnswer": "C",
+    "category": "Biology",
+    "explanation": "The cell wall is unique to plant cells, providing structure and protection.",
+    "id": 3
+  },
+  {
+    "question": "who was the founder of the maurya dynasty?",
+    "options": {
+      "A": "Chandragupta",
+      "B": "Ashoka",
+      "C": "Harshavardhana",
+      "D": "Chandragupta Maurya"
+    },
+    "correctAnswer": "D",
+    "category": "History",
+    "explanation": "The founder of the Maurya dynasty was Chandragupta Maurya.",
+    "id": 4
+  },
+  {
+    "question": "what is the chemical formula of water?",
+    "options": {
+      "A": "CO2",
+      "B": "H2SO4",
+      "C": "H2O",
+      "D": "CH4"
+    },
+    "correctAnswer": "C",
+    "category": "Science",
+    "explanation": "H2O is the chemical formula of water.",
+    "id": 5
+  }
+]

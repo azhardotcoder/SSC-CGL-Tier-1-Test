@@ -1,0 +1,379 @@
+[
+  {
+    "question": "kwashiorkor is a form of malnutrition caused due to the lack of what?",
+    "options": {
+      "A": "Fat",
+      "B": "Protein",
+      "C": "Vitamins",
+      "D": "Carbohydrates"
+    },
+    "correctAnswer": "B",
+    "category": "Biology",
+    "explanation": "Kwashiorkor results from a deficiency in protein intake in the diet, especially in children.",
+    "id": 1
+  },
+  {
+    "question": "which of the following is found only in plant cells?",
+    "options": {
+      "A": "Mitochondria",
+      "B": "Nucleolus",
+      "C": "Cell Wall",
+      "D": "Cell membrane"
+    },
+    "correctAnswer": "C",
+    "category": "Biology",
+    "explanation": "The cell wall is unique to plant cells, providing structure and protection.",
+    "id": 2
+  },
+  {
+    "id": 3,
+    "question": "who is the current president of india (as of 2024)?",
+    "options": {
+      "A": "Pratibha Patil",
+      "B": "Droupadi Murmu",
+      "C": "Ram Nath Kovind",
+      "D": "Narendra Modi"
+    },
+    "correctAnswer": "B",
+    "category": "Current Affairs",
+    "explanation": "Droupadi Murmu is the President of India since 2022."
+  },
+  {
+    "id": 4,
+    "question": "which of the following is a direct tax?",
+    "options": {
+      "A": "GST",
+      "B": "Income Tax",
+      "C": "Custom Duty",
+      "D": "Excise Duty"
+    },
+    "correctAnswer": "B",
+    "category": "Economics",
+    "explanation": "Income Tax is paid directly by individuals and is a direct tax."
+  },
+  {
+    "id": 5,
+    "question": "choose the correctly spelt word.",
+    "options": {
+      "A": "Grammer",
+      "B": "Gramerr",
+      "C": "Grammerly",
+      "D": "Grammar"
+    },
+    "correctAnswer": "D",
+    "category": "English",
+    "explanation": "'Grammar' is the correct spelling."
+  },
+  {
+    "id": 6,
+    "question": "what is the currency of japan?",
+    "options": {
+      "A": "Yuan",
+      "B": "Won",
+      "C": "Yen",
+      "D": "Ringgit"
+    },
+    "correctAnswer": "C",
+    "category": "General Knowledge",
+    "explanation": "Yen is the official currency of Japan."
+  },
+  {
+    "id": 7,
+    "question": "what is the capital city of france?",
+    "options": {
+      "A": "Paris",
+      "B": "Berlin",
+      "C": "Paris",
+      "D": "Madrid"
+    },
+    "correctAnswer": "C",
+    "category": "Geography",
+    "explanation": "The capital of France is Paris."
+  },
+  {
+    "id": 8,
+    "question": "what is the capital city of germany?",
+    "options": {
+      "A": "Paris",
+      "B": "Berlin",
+      "C": "Berlin",
+      "D": "Madrid"
+    },
+    "correctAnswer": "C",
+    "category": "Geography",
+    "explanation": "The capital of Germany is Berlin."
+  },
+  {
+    "id": 9,
+    "question": "what is the capital city of japan?",
+    "options": {
+      "A": "Paris",
+      "B": "Berlin",
+      "C": "Tokyo",
+      "D": "Madrid"
+    },
+    "correctAnswer": "C",
+    "category": "Geography",
+    "explanation": "The capital of Japan is Tokyo."
+  },
+  {
+    "id": 10,
+    "question": "what is the capital city of canada?",
+    "options": {
+      "A": "Paris",
+      "B": "Berlin",
+      "C": "Ottawa",
+      "D": "Madrid"
+    },
+    "correctAnswer": "C",
+    "category": "Geography",
+    "explanation": "The capital of Canada is Ottawa."
+  },
+  {
+    "question": "who was the founder of the maurya dynasty?",
+    "options": {
+      "A": "Chandragupta",
+      "B": "Ashoka",
+      "C": "Harshavardhana",
+      "D": "Chandragupta Maurya"
+    },
+    "correctAnswer": "D",
+    "category": "History",
+    "explanation": "The founder of the Maurya dynasty was Chandragupta Maurya.",
+    "id": 11
+  },
+  {
+    "id": 12,
+    "question": "who was the founder of the gupta dynasty?",
+    "options": {
+      "A": "Chandragupta",
+      "B": "Ashoka",
+      "C": "Harshavardhana",
+      "D": "Sri Gupta"
+    },
+    "correctAnswer": "D",
+    "category": "History",
+    "explanation": "The founder of the Gupta dynasty was Sri Gupta."
+  },
+  {
+    "id": 13,
+    "question": "who was the founder of the mughal dynasty?",
+    "options": {
+      "A": "Chandragupta",
+      "B": "Ashoka",
+      "C": "Harshavardhana",
+      "D": "Babur"
+    },
+    "correctAnswer": "D",
+    "category": "History",
+    "explanation": "The founder of the Mughal dynasty was Babur."
+  },
+  {
+    "id": 14,
+    "question": "who was the founder of the lodi dynasty?",
+    "options": {
+      "A": "Chandragupta",
+      "B": "Ashoka",
+      "C": "Harshavardhana",
+      "D": "Bahlol Lodi"
+    },
+    "correctAnswer": "D",
+    "category": "History",
+    "explanation": "The founder of the Lodi dynasty was Bahlol Lodi."
+  },
+  {
+    "id": 15,
+    "question": "if the price of an item is increased by 25%, by what percentage must consumption be reduced to keep expenditure same?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "18%",
+      "D": "30%"
+    },
+    "correctAnswer": "A",
+    "category": "Mathematics",
+    "explanation": "Let increase be r%. Then decrease % = [r / (100 + r)] × 100 = 25 / 125 × 100 = 20%"
+  },
+  {
+    "id": 16,
+    "question": "if a + b = 10 and ab = 21, what is the value of a² + b²?",
+    "options": {
+      "A": "58",
+      "B": "59",
+      "C": "60",
+      "D": "61"
+    },
+    "correctAnswer": "A",
+    "category": "Mathematics",
+    "explanation": "Using identity a² + b² = (a + b)² - 2ab = 100 - 42 = 58."
+  },
+  {
+    "question": "in a right angled triangle, the product of its two sides equals half of the square of the third side. one of the acute angles must then be?",
+    "options": {
+      "A": "150°",
+      "B": "30°",
+      "C": "45°",
+      "D": "60°"
+    },
+    "correctAnswer": "C",
+    "category": "Mathematics",
+    "explanation": "Using the Pythagorean Theorem and given relation, the angle is found to be 45°.",
+    "id": 17
+  },
+  {
+    "id": 18,
+    "question": "if the price increases by 25%, by what percent should consumption decrease to keep expenditure same?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "18%",
+      "D": "20%"
+    },
+    "correctAnswer": "D",
+    "category": "Mathematics",
+    "explanation": "To maintain constant expenditure, decrease % = 25/(100 + 25) × 100 = 20%."
+  },
+  {
+    "id": 19,
+    "question": "if the price increases by 50%, by what percent should consumption decrease to keep expenditure same?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "18%",
+      "D": "33.33%"
+    },
+    "correctAnswer": "D",
+    "category": "Mathematics",
+    "explanation": "To maintain constant expenditure, decrease % = 50/(100 + 50) × 100 = 33.33%."
+  },
+  {
+    "id": 20,
+    "question": "if the price increases by 20%, by what percent should consumption decrease to keep expenditure same?",
+    "options": {
+      "A": "20%",
+      "B": "25%",
+      "C": "18%",
+      "D": "16.67%"
+    },
+    "correctAnswer": "D",
+    "category": "Mathematics",
+    "explanation": "To maintain constant expenditure, decrease % = 20/(100 + 20) × 100 = 16.67%."
+  },
+  {
+    "id": 21,
+    "question": "which article of the indian constitution deals with national emergency?",
+    "options": {
+      "A": "352",
+      "B": "360",
+      "C": "368",
+      "D": "352"
+    },
+    "correctAnswer": "D",
+    "category": "Polity",
+    "explanation": "Article 352 deals with national emergency."
+  },
+  {
+    "id": 22,
+    "question": "which article of the indian constitution deals with financial emergency?",
+    "options": {
+      "A": "352",
+      "B": "360",
+      "C": "368",
+      "D": "360"
+    },
+    "correctAnswer": "D",
+    "category": "Polity",
+    "explanation": "Article 360 deals with financial emergency."
+  },
+  {
+    "id": 23,
+    "question": "which article of the indian constitution deals with constitutional amendment?",
+    "options": {
+      "A": "352",
+      "B": "360",
+      "C": "368",
+      "D": "368"
+    },
+    "correctAnswer": "D",
+    "category": "Polity",
+    "explanation": "Article 368 deals with constitutional amendment."
+  },
+  {
+    "id": 24,
+    "question": "find the next number in the series: 2, 6, 12, 20, ?",
+    "options": {
+      "A": "30",
+      "B": "28",
+      "C": "24",
+      "D": "22"
+    },
+    "correctAnswer": "B",
+    "category": "Reasoning",
+    "explanation": "Pattern is n^2 + n: 1+1=2, 2+4=6, 3+9=12, 4+16=20, 5+25=30."
+  },
+  {
+    "question": "what is the chemical formula of water?",
+    "options": {
+      "A": "CO2",
+      "B": "H2SO4",
+      "C": "H2O",
+      "D": "CH4"
+    },
+    "correctAnswer": "C",
+    "category": "Science",
+    "explanation": "H2O is the chemical formula of water.",
+    "id": 25
+  },
+  {
+    "id": 26,
+    "question": "what is the chemical symbol for gold?",
+    "options": {
+      "A": "Ag",
+      "B": "Fe",
+      "C": "Cu",
+      "D": "Au"
+    },
+    "correctAnswer": "D",
+    "category": "Science",
+    "explanation": "The chemical symbol for Gold is Au."
+  },
+  {
+    "id": 27,
+    "question": "what is the chemical symbol for silver?",
+    "options": {
+      "A": "Ag",
+      "B": "Fe",
+      "C": "Cu",
+      "D": "Ag"
+    },
+    "correctAnswer": "D",
+    "category": "Science",
+    "explanation": "The chemical symbol for Silver is Ag."
+  },
+  {
+    "id": 28,
+    "question": "what is the chemical symbol for iron?",
+    "options": {
+      "A": "Ag",
+      "B": "Fe",
+      "C": "Cu",
+      "D": "Fe"
+    },
+    "correctAnswer": "D",
+    "category": "Science",
+    "explanation": "The chemical symbol for Iron is Fe."
+  },
+  {
+    "id": 29,
+    "question": "what is the chemical symbol for copper?",
+    "options": {
+      "A": "Ag",
+      "B": "Fe",
+      "C": "Cu",
+      "D": "Cu"
+    },
+    "correctAnswer": "D",
+    "category": "Science",
+    "explanation": "The chemical symbol for Copper is Cu."
+  }
+]

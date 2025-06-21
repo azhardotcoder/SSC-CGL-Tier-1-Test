@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "question": "what is the currency of japan?",
+    "options": {
+      "A": "Yuan",
+      "B": "Won",
+      "C": "Yen",
+      "D": "Ringgit"
+    },
+    "correctAnswer": "C",
+    "category": "General Knowledge",
+    "explanation": "Yen is the official currency of Japan."
+  }
+]
