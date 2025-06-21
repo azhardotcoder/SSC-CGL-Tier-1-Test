@@ -1,33 +1,41 @@
-// Global Variables
-let allQuestions = [];
+// Global state
 let currentTestSet = null;
 let currentQuestions = [];
 let currentQuestionIndex = 0;
 let userAnswers = {};
 let markedForReview = new Set();
-let testStartTime;
-let timerInterval;
-let testDuration = 60 * 60; // 60 minutes in seconds
-
-// NEW: User state & progress
-let userName = localStorage.getItem('ssc_userName') || '';
-let progressData = JSON.parse(localStorage.getItem('ssc_progress') || '{}');
+let testStartTime = null;
+let timerInterval = null;
+let progressData = {};
+let allQuestions = [];
+let userName = localStorage.getItem('ssc_userName');
+let testDuration = 3600; // 1 hour in seconds
+let subjectMap = {}; // {subject:[questions]}
 
 // Current page detection
 const currentPage = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
 
-// ===== SUBJECT FLOW =====
-let subjectMap={}; // {subject:[questions]}
-
 // Utility to persist progress
 function saveProgress() {
     if (!currentTestSet) return;
+    
+    // Save both progress and current state
+    const currentState = {
+        currentTestSet,
+        currentQuestionIndex,
+        userAnswers,
+        markedForReview: Array.from(markedForReview),
+        testStartTime
+    };
+    
     progressData[currentTestSet.id || currentTestSet.name] = {
         answers: userAnswers,
         marked: Array.from(markedForReview),
         timestamp: Date.now()
     };
+    
     localStorage.setItem('ssc_progress', JSON.stringify(progressData));
+    localStorage.setItem('currentTestState', JSON.stringify(currentState));
 }
 
 // DOM Elements
@@ -108,20 +116,38 @@ document.addEventListener('DOMContentLoaded', async () => {
 function loadTestState() {
     const testState = JSON.parse(localStorage.getItem('currentTestState'));
     if (!testState) {
+        console.error('No test state found');
         window.location.href = 'index.html';
         return;
     }
     
+    // Load test state with proper validation
     currentTestSet = testState.currentTestSet;
+    if (!currentTestSet || !currentTestSet.questions) {
+        console.error('Invalid test set in state');
+        window.location.href = 'index.html';
+        return;
+    }
+    
     currentQuestions = currentTestSet.questions;
-    currentQuestionIndex = testState.currentQuestionIndex || 0;
+    currentQuestionIndex = Number(testState.currentQuestionIndex) || 0;
     userAnswers = testState.userAnswers || {};
     markedForReview = new Set(testState.markedForReview || []);
     testStartTime = testState.testStartTime || Date.now();
     
+    // Load progress data if it exists
+    try {
+        progressData = JSON.parse(localStorage.getItem('ssc_progress') || '{}');
+    } catch (e) {
+        console.error('Error loading progress data:', e);
+        progressData = {};
+    }
+    
+    // Initialize UI
     applyUserName();
     displayQuestion(currentQuestionIndex);
     createQuestionPalette();
+    updatePalette();
     startTimer();
 }
 
@@ -246,7 +272,15 @@ function setupTestListeners() {
     optionsContainer.addEventListener('click', e => {
         const option = e.target.closest('.option');
         if (!option) return;
-        selectOption(option.dataset.key);
+        const key = option.dataset.key || option.querySelector('input[type="radio"]').value;
+        selectOption(key);
+    });
+    
+    // Additional safety: capture direct radio changes (e.g., via keyboard)
+    optionsContainer.addEventListener('change', e => {
+        if (e.target && e.target.matches('input[type="radio"]')) {
+            selectOption(e.target.value);
+        }
     });
     
     const paletteGrid = document.getElementById('palette-grid');
@@ -327,16 +361,22 @@ function startRandomTest(num, label) {
 }
 
 function submitTest() {
+    // Calculate results
     const results = calculateResults();
     
-    // Save results and state before navigation
-    localStorage.setItem('testResults', JSON.stringify(results));
-    localStorage.setItem('reviewState', JSON.stringify({
+    // Save results and review state
+    const reviewState = {
         testName: currentTestSet.name,
         questions: currentQuestions,
-        userAnswers,
-        markedForReview: Array.from(markedForReview)
-    }));
+        userAnswers: userAnswers || {},
+        markedForReview: Array.from(markedForReview || new Set())
+    };
+    
+    localStorage.setItem('testResults', JSON.stringify(results));
+    localStorage.setItem('reviewState', JSON.stringify(reviewState));
+    
+    // Clear current test state
+    localStorage.removeItem('currentTestState');
     
     // Navigate to results page
     window.location.href = 'results.html';
@@ -580,6 +620,7 @@ function displayQuestion(qIndex) {
     Object.entries(question.options).forEach(([key, value]) => {
         const optionEl = document.createElement('div');
         optionEl.className = 'option';
+        optionEl.dataset.key = key;
         // Check if an answer for this question already exists
         const isChecked = userAnswers[qIndex] === key;
         if (isChecked) {
@@ -599,15 +640,23 @@ function displayQuestion(qIndex) {
 
 // Select an option
 function selectOption(optionKey) {
+    if (!userAnswers) userAnswers = {};
+    
     userAnswers[currentQuestionIndex] = optionKey;
+    
+    // Update UI
     document.querySelectorAll('.option').forEach(el => {
         const radio = el.querySelector('input[type="radio"]');
         if (radio.value === optionKey) {
+            radio.checked = true;
             el.classList.add('selected');
         } else {
+            radio.checked = false;
             el.classList.remove('selected');
         }
     });
+    
+    // Update palette and save state
     updatePalette();
     saveProgress();
 }
@@ -746,16 +795,34 @@ function confirmSubmit() {
 // Calculate results
 function calculateResults() {
     let correct = 0, incorrect = 0, unattempted = 0;
+    
+    // Ensure we have valid state
+    if (!currentQuestions || !currentQuestions.length) {
+        console.error('No questions found when calculating results');
+        return {
+            testName: currentTestSet?.name || 'Unknown Test',
+            score: 0,
+            maxScore: 0,
+            correct: 0,
+            incorrect: 0,
+            unattempted: 0,
+            accuracy: 0
+        };
+    }
+    
+    // Ensure userAnswers exists
+    const answers = userAnswers || {};
+    
     currentQuestions.forEach((q, i) => {
-        if (!userAnswers.hasOwnProperty(i)) {
+        if (!answers[i] && answers[i] !== 0) { // Check for both undefined and 0
             unattempted++;
-        } else if (userAnswers[i] === q.correctAnswer) {
+        } else if (answers[i] === q.correctAnswer) {
             correct++;
         } else {
             incorrect++;
         }
     });
-
+    
     const score = (correct * 2) - (incorrect * 0.5);
     const totalAttempted = correct + incorrect;
     const accuracy = totalAttempted > 0 ? (correct / totalAttempted * 100).toFixed(2) : 0;
